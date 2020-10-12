@@ -43,7 +43,7 @@
     <!-- Submit Field -->
     <div class="form-group col-sm-12">
         {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
-        <a href="{{ route('admin.servicos.index') }}" class="btn btn-default">Cancel</a>
+        <a href="{{ URL::previous() }}" class="btn btn-default">Cancel</a>
     </div>
 
 </div>
@@ -55,14 +55,3 @@
     @endif
 </div>
 
-@push('scripts')
-<script>
-$(function(){
-    $("#pet_id").change(function(){
-        $.get('http://localhost:800/imagem/' + $(this).val() + '/' + 300);
-    })
-
-})
-</script>
-    
-@endpush

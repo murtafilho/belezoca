@@ -91,7 +91,7 @@
                     BeleZoca
                 </div>
                 <h2>Hotelzinho e Serviços</h2>
-                <a href="" id="ver-prod">Belezoca</a>
+                <a href="{{route('login')}}" id="ver-prod">Belezoca</a>
                 </div>
             
             </div>
