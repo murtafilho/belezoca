@@ -25,7 +25,7 @@
                     {{Carbon\Carbon::parse($hospedagem->data_saida)->format('d/m/Y')}}
 
                 <td>{!! $hospedagem->pet->descr !!}</td>
-                <td><img src="{{asset("storage/".$hospedagem->pet->img)}}" width="60" alt="{{$hospedagem->pet->nome}}"
+                <td><img src="{{asset($hospedagem->pet->img)}}" width="60" alt="{{$hospedagem->pet->nome}}"
                         class=""></td>
                 <td>{{ $hospedagem->tipo }}</td>
                 <td>{{ $hospedagem->pet->cliente->nome }} ({{ $hospedagem->pet->cliente->fone}})</td>

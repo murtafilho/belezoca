@@ -33,7 +33,7 @@
                         @if($pet->img)
                     
                         <a href="{{ route('admin.pets.show', [$pet->id]) }}">
-                            <img src="{{asset('storage/'.$pet->img)}}" width="80px" alt="">
+                            <img src="{{asset($pet->img)}}" width="80px" alt="">
                         </a>
                         @endif
                     <td>{{ $pet->raca }}</td>

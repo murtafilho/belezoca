@@ -31,7 +31,7 @@
 <!-- Img Field -->
 <div class="form-group">
     {!! Form::label('img', 'Img:') !!}
-    <p><img src="{{asset("storage/".$pet->img)}}" width="" alt="{{$pet->nome}}"></p>
+    <p><img src="{{asset($pet->img)}}" width="" alt="{{$pet->nome}}"></p>
 </div>
 </div>
 

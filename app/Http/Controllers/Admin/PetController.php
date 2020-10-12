@@ -143,7 +143,7 @@ class PetController extends AppBaseController
     {
         if (request()->has('img')) {
             $pet->update(
-                ['img' => request()->img->store('pets', 'public')]
+                ['img' => request()->img->store('pets')]
             );
         }
     }

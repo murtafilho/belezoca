@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => 'public',
+    'default' => 'pets',
 
     /*
     |--------------------------------------------------------------------------
@@ -42,16 +42,16 @@ return [
     */
 
     'disks' => [
-        
+
         'local' => [
             'driver' => 'local',
             'root' => storage_path('app'),
         ],
 
-        'public' => [
+        'pets' => [
             'driver' => 'local',
-            'root' => storage_path('app/public'),
-            'url' => env('APP_URL').'/storage',
+            'root' => public_path(),
+            'url' => public_path().'/pets',
             'visibility' => 'public',
         ],
 

@@ -20,7 +20,7 @@
                     {{$servico->databr}} {{$servico->hora}}</td>
 
                 <td>{!! $servico->pet->descr !!}</td>
-                <td><img src="{{asset("storage/".$servico->pet->img)}}" width="60" alt="{{$servico->pet->nome}}" class=""></td>
+                <td><img src="{{asset($servico->pet->img)}}" width="60" alt="{{$servico->pet->nome}}" class=""></td>
                 <td>{{ $servico->tipo }}</td>
                 <td>{{ $servico->pet->cliente->nome }} ({{ $servico->pet->cliente->fone}})</td>
                 <td>{{ $servico->obs }}</td>
